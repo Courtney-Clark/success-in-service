@@ -1,0 +1,79 @@
+body {
+  font-family: sans serif;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+h2 {
+  color: white;
+  font-size: 28px;
+  padding-left: 20px;
+}
+
+.logo {
+  background-color: #009CB5
+}
+
+.navigationbar {
+  list-style-type: none;
+  color: white;
+  text-align: right; 
+  padding-bottom: 20px;
+  padding-right: 100px;
+}
+
+li {
+  display: inline;
+  padding: 25px; 
+  font-size: 24px;
+}
+
+.openingstatement {
+  text-align: center;
+  font-size: 24px; 
+}
+
+.trailer {
+  text-align: center; 
+}
+
+.calltoaction {
+  font-size: 28px;
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.firstcall {
+  float: right;
+  border: solid white 20px;
+  padding: 45px; 
+  height: 200px; 
+  background-color: #009CB5;
+}
+
+.secondcall {
+  float: right;
+  border: solid white 20px;
+  padding: 45px; 
+  height: 200px;
+  background-color: #009CB5;
+}
+
+.thirdcall {
+  float: right;
+  border: solid white 20px;
+  padding: 45px; 
+  height: 200px;
+  background-color: #009CB5;
+}
+
+.featurevid {
+  text-align: center;
+}
+
