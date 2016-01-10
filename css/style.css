@@ -33,7 +33,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
+.header {
   background-color: #009CB5;
   text-decoration: none;
   padding: 50px;
@@ -78,40 +78,25 @@ nav {
   text-align: center; 
 }
 
+hr {
+  border: solid #009CB5 5px;
+  width: 100%;
+  margin: 30px;
+}
+
 .calltoaction {
-  font-size: 24px;
-  padding-top: 30px;
+  font-size: 28px;
+  padding: 35px;
+  padding-top: 20px;
   text-align: center;
   color: white;
   width: 400px;
-}
-
-.firstcall {
-  float: right;
-  border: solid white 20px;
-  padding: 45px; 
-  padding-top: 20px;
-  height: 200px; 
-  background-color: #009CB5;
-}
-
-.secondcall {
-  float: right;
-  border: solid white 20px;
-  padding: 45px; 
-  padding-top: 20px;
   height: 200px;
+   border: solid white 5px;  
   background-color: #009CB5;
-}
-
-.thirdcall {
   float: right;
-  border: solid white 20px;
-  padding: 45px; 
-  padding-top: 20px;
-  height: 200px;
-  background-color: #009CB5;
-  width: 400px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .videoalign {
