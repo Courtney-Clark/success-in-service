@@ -49,7 +49,8 @@ header {
 
 h2 {
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 300;
+  padding-left: 30px;
 }
 
 nav {
@@ -131,5 +132,12 @@ footer {
   color: white;
   font-size: 50px;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
+.social {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  list-style: none;
+}
