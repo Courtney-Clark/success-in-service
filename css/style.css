@@ -45,6 +45,7 @@ header {
   color: white;
   font-size: 36px;
   padding-left: 20px;
+  text-decoration: none;
 }
 
 h2 {
@@ -53,30 +54,142 @@ h2 {
   padding-left: 25px;
 }
 
-nav {
-  position: static;
-  height: 50px;
-  padding: 30px 30px;
-  font-size: 24px;
-  font-weight: 600;
-  color: black;
-  float: right;
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-a {
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: left;
+}
+
+.nav a {
   text-decoration: none;
-  color: white;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
 }
 
-.navigation {
-  display: inline-block;
-  padding: 40px;
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: .8em;
+}
+
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (min-width: 650px) {
+  .nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .nav a {
+    border-bottom: none;
+  }
+
+  .nav > ul > li {
+    text-align: center;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 0;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .nav li:hover ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    display: block;
+  }
+
+/*.nav {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  list-style: none;
+  padding: 8px;
+  display: block;
   float: right;
-  font-size: 24px;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-
 }
+
+.nav a {
+  text-decoration: none;
+   color: white;
+}
+
+li a:hover {
+  background-color: #111;
+}*/
+
+
+/*.submenu {
+  position: absolute;
+  display: none;
+  width: inherit;
+}
+
+.nav li:hover ul {
+  display: block;
+}
+*/
+.nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .nav li:hover ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    display: block;
+  }
+}
+
+
+.active {
+    background-color: #4CAF50;
+}
+
 
 .openingstatement {
   text-align: center;

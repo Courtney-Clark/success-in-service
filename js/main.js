@@ -1,6 +1,16 @@
 
  $(document).ready(function() {
 
+$( '.dropdown' ).hover(
+        function(){
+            $(this).children('.childnav').slideDown(200);
+        },
+        function(){
+            $(this).children('.childnav').slideUp(200);
+        }
+ );
+
+
  $(".secondvid").hide();
  $(".thirdvid").hide();
 
@@ -21,6 +31,5 @@ $(".thirdvid").hide();
 $(".featurevid").show('slide', 400)
 }
 $(".threechange").click(changeVidThree)
-
 
 })
