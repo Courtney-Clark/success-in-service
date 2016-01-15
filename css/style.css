@@ -29,8 +29,15 @@
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+html {
+  margin: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  width: 100%;
+  margin: 0;
 }
 
 header {
@@ -38,7 +45,7 @@ header {
   text-decoration: none;
   padding: 50px;
   color: white;
-  height: 280px;
+  height: 155px;
 }
 
 .logo {
@@ -54,11 +61,15 @@ h2 {
   padding-left: 25px;
 }
 
+.nav {
+width: 100%;
+}
+
 .nav ul {
   list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
+  background-color: #111;
+  padding-left: 600px;
+  padding-bottom: 20px;
   margin: 0;
 }
 
@@ -79,7 +90,7 @@ h2 {
 }
 
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: #009CB5;
 }
 
 .nav a.active {
@@ -100,7 +111,7 @@ h2 {
    or other values could be used depending on other factors
 ********************************************/
 
-@media screen and (min-width: 650px) {
+/*@media screen and (min-width: 650px) {*/
   .nav li {
     width: 130px;
     border-bottom: none;
@@ -109,13 +120,16 @@ h2 {
     font-size: 1.4em;
     display: inline-block;
     margin-right: -4px;
+    width: 150px;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
   }
 
   .nav a {
     border-bottom: none;
   }
 
-  .nav > ul > li {
+  .nav li {
     text-align: center;
   }
 
@@ -138,38 +152,6 @@ h2 {
     display: block;
   }
 
-/*.nav {
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
-  list-style: none;
-  padding: 8px;
-  display: block;
-  float: right;
-}
-
-.nav a {
-  text-decoration: none;
-   color: white;
-}
-
-li a:hover {
-  background-color: #111;
-}*/
-
-
-/*.submenu {
-  position: absolute;
-  display: none;
-  width: inherit;
-}
-
-.nav li:hover ul {
-  display: block;
-}
-*/
 .nav li ul {
     position: absolute;
     display: none;
@@ -183,13 +165,15 @@ li a:hover {
   .nav li ul li {
     display: block;
   }
-}
 
+  .submenu {
+    color: white;
+    display: block;
+  }
 
-.active {
+/*.active {
     background-color: #4CAF50;
-}
-
+}*/
 
 .openingstatement {
   text-align: center;
@@ -221,6 +205,7 @@ hr {
   margin-top: 30px;
   margin-left: 40px;
   margin-right: 8px;
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -260,9 +245,11 @@ footer {
 
 .social {
   display: inline-block;
-  text-align: center;
-  margin: 0 auto;
   list-style: none;
+  color: white;
+  float: right;
+  margin-right: 300px;
+  margin-left: -240px;
 }
 
 /*applyintern.html*/
