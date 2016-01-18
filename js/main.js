@@ -33,3 +33,20 @@ $(".featurevid").show('slide', 400)
 $(".threechange").click(changeVidThree)
 
 })
+
+ //watch videos
+
+ $(".readmore").click(function(){
+	event.preventDefault()
+    $("#show-this-on-click").slideDown();
+    $(".readless").show();
+    $(".readmore").hide();
+});
+
+
+$(".readless").click(function(){
+	event.preventDefault()
+	$("#show-this-on-click").slideUp();
+	$(".readless").hide();
+	$(".readmore").show();
+});
