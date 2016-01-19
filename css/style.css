@@ -135,6 +135,7 @@ width: 100%;
     position: absolute;
     display: none;
     width: inherit;
+    color: white;
   }
 
   .nav li:hover ul {
@@ -145,24 +146,10 @@ width: 100%;
     display: block;
   }
 
-.nav li ul {
-    position: absolute;
-    display: none;
-    width: inherit;
-  }
-
-  .nav li:hover ul {
-    display: block;
-  }
-
-  .nav li ul li {
-    display: block;
-  }
-
-  .submenu {
+/*  .submenu {
     color: white;
     display: block;
-  }
+  }*/
 
 /*.active {
     background-color: #4CAF50;
