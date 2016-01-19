@@ -105,14 +105,6 @@ width: 100%;
   font-size: .8em;
 }
 
-/*******************************************
-   Style menu for larger screens
-
-   Using 650px (130px each * 5 items), but ems
-   or other values could be used depending on other factors
-********************************************/
-
-/*@media screen and (min-width: 650px) {*/
   .nav li {
     width: 130px;
     border-bottom: none;
@@ -365,4 +357,15 @@ width: 100%;
 .rpcvpicimg{
   width: 500px;
   height: 350px;
+}
+/*
+about.html
+*/
+
+.tagline {
+  padding: 20px;
+}
+
+.aboutsection {
+  padding-left: 40px;
 }
