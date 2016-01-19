@@ -76,7 +76,7 @@ $(document).ready(function() {
 
 	$(".readmore").click(function(){
 		event.preventDefault();
-		var $stext = $(this).siblings("#showthisonclick").stop(true,true);
+		var $stext = $(this).siblings(".showthisonclick").stop(true,true);
 		$stext.slideDown(300);
 	   	$(".readmore").hide();
 	   	$(".readless").show();
@@ -86,7 +86,7 @@ $(document).ready(function() {
 
 	$(".readless").click(function() {
    		event.preventDefault();
-   		var $stext = $(this).siblings("#showthisonclick").stop(true,true);
+   		var $stext = $(this).siblings(".showthisonclick").stop(true,true);
      	$stext.slideUp(300);
      	$(".readmore").show();
      	$(".readless").hide();
